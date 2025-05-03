@@ -1,4 +1,4 @@
-<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:v="clr-namespace:System;assembly=mscorlib">
 
@@ -6,10 +6,7 @@
     <v:String x:Key="defaultDescriptionApp">Наведіть вказівник миші на піктограму будь-якого додатку, щоб отримати його назву</v:String>
 
     <!--#region Load Window -->
-    <v:String x:Key="title0_load">Завантаження   </v:String>
-    <v:String x:Key="title1_load">Завантаження.  </v:String>
-    <v:String x:Key="title2_load">Завантаження.. </v:String>
-    <v:String x:Key="title3_load">Завантаження...</v:String>
+    <v:String x:Key="title_load">Завантаження</v:String>
     <v:String x:Key="text0_load">Завантаження профілю</v:String>
     <v:String x:Key="text1_load">Перевірка даних</v:String>
     <v:String x:Key="text2_load">Перегляд реєстру</v:String>
@@ -38,32 +35,40 @@
     <v:String x:Key="title_info_notification">Інформація</v:String>
     <v:String x:Key="logout_notification">Потрібно вийти з системи. Натисніть на цей текст, щоб зробити це</v:String>
     <v:String x:Key="restart_notification">Потрібно перезавантажити комп'ютер. Натисніть на цей текст, щоб зробити це</v:String>
+    <v:String x:Key="warn_update_notification">Під час оновлення програми виникла помилка, повторіть спробу пізніше</v:String>
+    <v:String x:Key="import_warning_notification">Цей файл не підходить для імпорту</v:String>
+    <v:String x:Key="import_empty_notification">Цей файл порожній, використання налаштувань неможливе</v:String>
+    <v:String x:Key="export_warning_notification">Це не має сенсу, спочатку застосуйте принаймні одне налаштування</v:String>
     <v:String x:Key="onedrive_notification">Розпочато процес відновлення OneDrive, на це потрібен деякий час</v:String>
     <v:String x:Key="appsdelete_notification">Розпочато процес видалення додатків, на це потрібен деякий час</v:String>
+    <v:String x:Key="windefender_notification">Процес потребує деякого часу, будь ласка, зачекайте</v:String>
+    <v:String x:Key="firewalloff_notification">Ваш брандмауер вимкнено, увімкніть та застосовуйте налаштування знову</v:String>
     <v:String x:Key="viewlicense_notification">Для початку активуйте Windows. Не всі налаштування можна застосовувати на не активованій ОС</v:String>
-    <v:String x:Key="createpoint_notification">Для створення точки відновлення потрібен певний час</v:String>
-    <v:String x:Key="notsuccessfulpoint_notification">Щось не так, не вдалося створити точку відновлення</v:String>
-    <v:String x:Key="successpoint_notification">Точку відновлення успішно створено</v:String>
-    <v:String x:Key="notsuccessfulrecovery_notification">Щось не так, не вдалося запустити відновлення</v:String>
     <v:String x:Key="readyactivate_notification">Ваша операційна система не потребує активації</v:String>
     <v:String x:Key="activatewin_notification">Розпочато процес активації Windows, на це потрібен деякий час</v:String>
     <v:String x:Key="successactivate_notification">Операційну систему успішно активовано, рекомендовано перезавантажити комп'ютер</v:String>
     <v:String x:Key="notsuccessactivate_notification">Щось не так, не вдалося активувати систему</v:String>
-    <v:String x:Key="windefender_notification">Процес потребує деякого часу, будь ласка, зачекайте</v:String>
-    <v:String x:Key="warningwindef_notification">Неможливо одночасно вмикати та вимикати Захисник Windows</v:String>
-    <v:String x:Key="windefclose_notification">Дочекайтеся завершення операції із Захисником Windows</v:String>
-    <v:String x:Key="firewalloff_notification">Ваш брандмауер вимкнено, увімкніть та застосовуйте налаштування знову</v:String>
-    <v:String x:Key="clearingcache_notification">Виконано очищення системного кешу файлів</v:String>
-    <v:String x:Key="import_warning_notification">Цей файл не підходить для імпорту</v:String>
-    <v:String x:Key="import_empty_notification">Цей файл порожній, використання налаштувань неможливе</v:String>
-    <v:String x:Key="export_warning_notification">Це не має сенсу, спочатку застосуйте принаймні одне налаштування</v:String>
-    <v:String x:Key="clear_ram_notification">Виконано очищення короткочасної пам'яті та тимчасових файлів</v:String>
+    <v:String x:Key="networklicense_notification">Для активації потрібне підключення до Інтернету</v:String>
+    <v:String x:Key="keynotfound_notification">Не знайдено ключ для вашої редакції Windows, активацію скасовано</v:String>
+    <v:String x:Key="createpoint_notification">Для створення точки відновлення потрібен певний час</v:String>
+    <v:String x:Key="notsuccessfulpoint_notification">Щось не так, не вдалося створити точку відновлення</v:String>
+    <v:String x:Key="successpoint_notification">Точку відновлення успішно створено</v:String>
+    <v:String x:Key="notsuccessfulrecovery_notification">Щось не так, не вдалося запустити відновлення</v:String>
     <v:String x:Key="disable_recovery_notification">Відновлення системи вимкнено, точки відновлення недоступні</v:String>
     <v:String x:Key="warndisable_recovery_notification">У вас вже вимкнено систему відновлення</v:String>
-    <v:String x:Key="warn_update_notification">Під час оновлення програми виникла помилка, повторіть спробу пізніше</v:String>
-    <v:String x:Key="warn_defrag_notification">У вас вже вимкнено дефрагментацію дисків</v:String>
-    <v:String x:Key="error_defrag_notification">Щось не так, не вдалося вимкнути дефрагментацію</v:String>
-    <v:String x:Key="success_defrag_notification">Дефрагментацію ваших дисків успішно вимкнено</v:String>
+    <v:String x:Key="clearingcache_notification">Виконано очищення системного кешу файлів</v:String>
+    <v:String x:Key="clear_ram_notification">Виконано очищення короткочасної пам'яті та тимчасових файлів</v:String>
+    <v:String x:Key="warn_defrag_off_notification">У вас вже вимкнено дефрагментацію дисків</v:String>
+    <v:String x:Key="warn_defrag_on_notification">Дефрагментацію диска вже увімкнено</v:String>
+    <v:String x:Key="error_defrag_notification">Щось пішло не так, не вдалося змінити стан дефрагментації</v:String>
+    <v:String x:Key="success_defrag_off_notification">Дефрагментацію ваших дисків успішно вимкнено</v:String>
+    <v:String x:Key="success_defrag_on_notification">Дефрагментацію диска успішно увімкнено</v:String>
+    <v:String x:Key="succes_compression_notification">Стиснення каталогу та його вмісту успішно виконано</v:String>
+    <v:String x:Key="succes_decompression_notification">Розтиснення каталогу та його вмісту успішно виконано</v:String>
+    <v:String x:Key="ready_compression_notification">Каталог уже стиснуто, повторне стиснення не потрібне</v:String>
+    <v:String x:Key="ready_decompression_notification">Каталог уже розтиснуто, повторне розтиснення не потрібне</v:String>
+    <v:String x:Key="error_compression_notification">Щось пішло не так, сталася помилка при зміні стану стиснення</v:String>
+    <v:String x:Key="notsupport_ntfs_notification">Операція недоступна, оскільки каталог не знаходиться на NTFS-розділі</v:String>
     <!--#endregion-->
 
     <!--#region Main Window -->
@@ -95,7 +100,7 @@
 
     <!--#region Import Window -->
     <v:String x:Key="title_win_import">Імпорт налаштувань</v:String>
-    <v:String x:Key="wait_win_import">На це потрібен деякий час...</v:String>
+    <v:String x:Key="wait_win_import">На це потрібен деякий час</v:String>
     <v:String x:Key="warning_win_import">Немає потреби примусово закривати вікно</v:String>
     <v:String x:Key="file_import">Файл</v:String>
     <!--#endregion-->
@@ -118,41 +123,41 @@
     <!--#region Confidentiality Page -->
     <v:String x:Key="tgl1_confidentiality">Ідентифікатор реклами та цільова реклама</v:String>
     <v:String x:Key="tgl2_confidentiality">Усі типи синхронізації ваших даних</v:String>
-    <v:String x:Key="tgl3_confidentiality">Телеметрія Windows</v:String>
+    <v:String x:Key="tgl3_confidentiality">Збір даних та моніторинг телеметрії Windows</v:String>
     <v:String x:Key="tgl4_confidentiality">Збір даних через події планувальника</v:String>
     <v:String x:Key="tgl5_confidentiality">Збір даних про встановлені додатки</v:String>
     <v:String x:Key="tgl6_confidentiality">Збір статистики використання додатків</v:String>
     <v:String x:Key="tgl7_confidentiality">Збір та надсилання даних про рукописне введення</v:String>
     <v:String x:Key="tgl8_confidentiality">Збір даних про конфігурацію обладнання</v:String>
-    <v:String x:Key="tgl9_confidentiality">Мережний доступ до шпигунських доменів</v:String>
+    <v:String x:Key="tgl9_confidentiality">Мережевий доступ до шпигунських доменів Microsoft</v:String>
     <v:String x:Key="tgl10_confidentiality">Визначення місця розташування користувача</v:String>
     <v:String x:Key="tgl11_confidentiality">Перевірка звернень через Відгук</v:String>
     <v:String x:Key="tgl12_confidentiality">Приховане фонове оновлення синтезу мовлення</v:String>
     <v:String x:Key="tgl13_confidentiality">Прихований моніторинг системи</v:String>
-    <v:String x:Key="tgl14_confidentiality">Віддалені експерименти на вашому ПК</v:String>
-    <v:String x:Key="tgl15_confidentiality">Шпигунські модулі для збору та надсилання даних</v:String>
+    <v:String x:Key="tgl14_confidentiality">Приховані експерименти над вашою системою</v:String>
+    <v:String x:Key="tgl15_confidentiality">Служби для прихованого збору та надсилання даних</v:String>
     <v:String x:Key="tgl16_confidentiality">Журналювання подій Windows</v:String>
-    <v:String x:Key="tgl17_confidentiality">Телеметрія NVIDIA</v:String>
+    <v:String x:Key="tgl17_confidentiality">Збір даних та моніторинг телеметрії NVIDIA</v:String>
     <v:String x:Key="tgl18_confidentiality">Журналювання дій користувача</v:String>
 
     <v:String x:Key="TglButton1_description_confidentiality">Для кожного користувача система Windows створює унікальний рекламний ідентифікатор для відстеження його дій. Використовується розробниками програм та самої Windows для власних цілей, у тому числі для демонстрації конкретної реклами в додатках.</v:String>
     <v:String x:Key="TglButton2_description_confidentiality">Навіть якщо ви використовуєте локальний обліковий запис, Windows завжди намагається синхронізувати з серверами Microsoft такі ваші дані, як теми, паролі, налаштування Windows, налаштування браузера, налаштування мовної панелі, налаштування спрощеного доступу, додаткові налаштування.</v:String>
     <v:String x:Key="TglButton3_description_confidentiality">Телеметрія - це діагностичні дані, які Windows автоматично збирає та надсилає на сервери Microsoft.  Концепція збору - "Що? Де? Коли? Навіщо ви використовуєте?" Microsoft стверджує, що дані анонімні та допомагають компанії у розробці Windows. Навіть якщо вас не хвилює збір такої інформації, може виникнути інша проблема - надмірне навантаження на процесор і уповільнення роботи системи.</v:String>
-    <v:String x:Key="TglButton4_description_confidentiality">"Планувальник завдань" містить служби, які після використання збирають дані про свою роботу та надсилають на сервер Microsoft.</v:String>
+    <v:String x:Key="TglButton4_description_confidentiality">«Планувальник завдань» містить служби, які після використання збирають дані про свою роботу та надсилають на сервер Microsoft.</v:String>
     <v:String x:Key="TglButton5_description_confidentiality">Microsoft збирає дані про ваше програмне забезпечення. Ця інформація використовується Microsoft для діагностики проблем сумісності, але не допомагає вдосконалювати сумісність у нових версіях Windows. Ця інформація використовується лише для власних корисливих цілей Microsoft. Відключення цієї можливості для запобігання надсилання потенційно конфіденційної інформації.</v:String>
-    <v:String x:Key="TglButton6_description_confidentiality">Microsoft хоче не лише мати список ваших додатків, а й вивчати успішність вашої роботи з цими додатками: частоту використання певних додатків, тривалість роботи з тим чи іншим додатком.</v:String>
-    <v:String x:Key="TglButton7_description_confidentiality">Після впровадження в Windows такої функції, як рукописне введення, Microsoft вирішила вдосконалити цю технологію шляхом її навчання за рахунок досвіду тих, хто використовує цю функцію Windows. Тобто, навіть якщо ви не використовуєте рукописне введення, як усталено дані про це надсилаються до Microsoft.</v:String>
+    <v:String x:Key="TglButton6_description_confidentiality">Налаштування вимикає функцію відстеження активності додатків, усуваючи збір даних про частоту використання, тривалість роботи та інші показники продуктивності. В результаті система припинить аналіз вашої діяльності, забезпечуючи захист вашої конфіденційної інформації.</v:String>
+    <v:String x:Key="TglButton7_description_confidentiality">Це налаштування вимикає механізм збору даних, який Microsoft використовує для покращення технології рукописного введення. Незалежно від того, користуєтеся ви цією функцією чи ні, система відстежує вашу активність з метою підвищення точності розпізнавання. Зміни, що вносить це налаштування, запобігають такому збору інформації, забезпечуючи захист вашої конфіденційної інформації.</v:String>
     <v:String x:Key="TglButton8_description_confidentiality">Програма вдосконалення якості програмного забезпечення (CEIP) - це окрема функція, яка збирає інформацію про конфігурацію вашого обладнання та використання на ньому програмного забезпечення та служб. Також періодично вивантажує файл із інформацією про проблеми, які виникають у Windows. Програма є добровільною, і вам не обов'язково надсилати дані до Microsoft, порушуючи свою конфіденційність.</v:String>
-    <v:String x:Key="TglButton9_description_confidentiality">Microsoft збирає інформацію про користувача та надсилає на свої сервери. Це налаштування додає у файл hosts адреси шпигунських доменів, які блокуватимуться брандмауером Windows.</v:String>
-    <v:String x:Key="TglButton10_description_confidentiality">Microsoft за допомогою Windows отримує місце вашого знаходження та використовує цю інформацію для рекламних цілей.</v:String>
-    <v:String x:Key="TglButton11_description_confidentiality">Навіть якщо ви не використовуєте "Відгук", Microsoft реєструє частоту ваших звернень до офіційної підтримки.</v:String>
-    <v:String x:Key="TglButton12_description_confidentiality">Windows вміє розпізнавати голос за допомогою спеціального модуля розпізнавання мовлення та синтезу мовлення. Навіть якщо ви не використовуєте "Cortana" або "Спеціальні можливості" Windows, як усталено ваша операційна система завжди перевіряє оновлення для свого механізму розпізнавання мовлення.</v:String>
+    <v:String x:Key="TglButton9_description_confidentiality">Це налаштування модифікує файл hosts шляхом додавання адреси 0.0.0.0 перед певними доменними іменами, що ефективно блокує їх. Додатково, змінюються налаштування брандмауера Windows і певні IP-адреси, пов’язані зі збором даних Microsoft, також блокуються.</v:String>
+    <v:String x:Key="TglButton10_description_confidentiality">Вимкнення служб геолокації значно знижує потенціальну можливість використання даних про розташування для рекламних цілей – доступ до цієї інформації обмежено не лише для служб Microsoft, але й для будь-яких сторонніх додатків та скриптів.</v:String>
+    <v:String x:Key="TglButton11_description_confidentiality">Налаштування блокує збір відгуків та сповіщень у Windows, що запобігає надсиланню даних без вашої згоди. Навіть якщо ви не користуєтеся функцією «Відгук», Microsoft все одно фіксує, як часто ви звертаєтеся до офіційної підтримки.</v:String>
+    <v:String x:Key="TglButton12_description_confidentiality">Windows здатна розпізнавати голос за допомогою спеціального модуля розпізнавання та синтезу мовлення. Навіть якщо ви не користуєтеся функціями Cortana або «Легкий доступ», як усталено, ваша операційна система завжди перевіряє наявність оновлень своєї системи розпізнавання голосу.</v:String>
     <v:String x:Key="TglButton13_description_confidentiality">Функція з доступом до будь-яких даних користувачів. Обмінюється якоюсь інформацію з серверами Microsoft і жодним чином не впливає на роботу операційної системи, додатків та не допомагає користувачеві, що робить її марною.</v:String>
     <v:String x:Key="TglButton14_description_confidentiality">Microsoft регулярно проводить експерименти за допомогою користувачів Windows, щоб визначити частоту використання та корисність тієї чи іншої функції. Це можна вважати порушенням конфіденційності.</v:String>
-    <v:String x:Key="TglButton15_description_confidentiality">Дві служби, Diag Truck та DmwappushService, є кейлогерами. Вони збирають практично всі дані про дії користувача, включно із всім, що набиралося на клавіатурі, і передає їх на сервери Microsoft без сповіщення та дозволу на це користувача.</v:String>
+    <v:String x:Key="TglButton15_description_confidentiality">Служби DiagTrack, dmwappushservice та diagsvc діють як кейлогери — тобто записують усі дії користувача, все, що вводиться з клавіатури, та надсилають ці дані на сервери Microsoft без вашої згоди. У разі використання UWF (Unified Write Filter) стабільна робота системи залежить від служби dmwappushservice. Однак, якщо ви не знаєте, що це таке, або у вас є альтернативний інструмент, є сенс позбутися цих кейлогерів.</v:String>
     <v:String x:Key="TglButton16_description_confidentiality">Журнал подій, який збирає та обробляє діагностичну інформацію системи, марно споживає комп'ютерні ресурси. Ця служба фактично нічого корисного для користувача не робить. Можна вимкнути, щоб запобігти надсиланню конфіденційної інформації.</v:String>
     <v:String x:Key="TglButton17_description_confidentiality">Служба для збору та передачі даних про систему та її використання. Марна і не пов'язана з роботою відео дайвера. Чому і яка інформація збирається, знає лише NVIDIA. Факт, що служба нічого корисного для кінцевого користувача не робить, абсолютно очевидний.</v:String>
-    <v:String x:Key="TglButton18_description_confidentiality">Windows містить багато засобів для відстеження дій користувача. Службу UAR призначено для детальної реєстрації ваших дій на комп’ютері, таких як створення скриншотів, набір тексту, запуск програми, доступ до вебкамери на заблокованому екрані тощо.</v:String>
+    <v:String x:Key="TglButton18_description_confidentiality">Налаштування вимикає функцію UAR (User Activity Recording) – систему, яка послідовно фіксує кожну вашу дію на комп’ютері: від створення скриншотів і набору тексту до запуску програм та надання доступу до вебкамери навіть у стані заблокованого екрану, а також багато іншого.</v:String>
     <!--#endregion-->
 
     <!--#region Interface Page -->
@@ -167,31 +172,33 @@
     <v:String x:Key="tgl9_interface">Затримка виклику контекстного меню</v:String>
     <v:String x:Key="tgl10_interface">Затримка появи мініатюр над панеллю завдань</v:String>
     <v:String x:Key="tgl11_interface">Стрілки ярликів файлів, папок або програм</v:String>
-    <v:String x:Key="tgl12_interface">Префікс "Ярлик для..."/ суфікс "- Ярлик"</v:String>
-    <v:String x:Key="tgl13_interface">Піктограма "Цей ПК" на робочому столі</v:String>
-    <v:String x:Key="tgl14_interface">Піктограма "Кошик" на робочому столі</v:String>
+    <v:String x:Key="tgl12_interface">Префікс «Ярлик для...»/ суфікс «- Ярлик»</v:String>
+    <v:String x:Key="tgl13_interface">Піктограма «Цей ПК» на робочому столі</v:String>
+    <v:String x:Key="tgl14_interface">Піктограма «Кошик» на робочому столі</v:String>
     <v:String x:Key="tgl15_interface">Вирівнювання панелі завдань (Windows 11)</v:String>
-    <v:String x:Key="tgl16_interface">Стандартний макет меню "Пуск" (Windows 11)</v:String>
+    <v:String x:Key="tgl16_interface">Стандартний макет меню «Пуск» (Windows 11)</v:String>
     <v:String x:Key="tgl17_interface">Скорочене контекстне меню (Windows 11)</v:String>
     <v:String x:Key="tgl18_interface">Показувати поради та пропозиції (Windows 11)</v:String>
     <v:String x:Key="tgl19_interface">Компактний режим елементів провідника (Windows 11)</v:String>
-    <v:String x:Key="tgl20_interface">Помічники "Copilot" та "Recall" (Windows 11)</v:String>
-    <v:String x:Key="tgl21_interface">Піктограми та кнопки на панелі завдань</v:String>
-    <v:String x:Key="tgl22_interface">Показувати персоналізовану рекламу</v:String>
-    <v:String x:Key="tgl23_interface">Відновлювати останні вікна папок під час входу</v:String>
-    <v:String x:Key="tgl24_interface">Повідомлення з порадами та пропозиціями Windows</v:String>
-    <v:String x:Key="tgl25_interface">Папки, розташовані в "Цей ПК"</v:String>
-    <v:String x:Key="tgl26_interface">3D-об'єкти в провіднику</v:String>
-    <v:String x:Key="tgl27_interface">Стиснення шпалер робочого столу формату .JPEG</v:String>
-    <v:String x:Key="tgl28_interface">Спливні підказки для елементів робочого столу</v:String>
-    <v:String x:Key="tgl29_interface">Пошуковий запит з інтеграцією "Bing" в меню "Пуск"</v:String>
-    <v:String x:Key="tgl30_interface">Відкривати "Швидкий доступ" замість "Цей ПК"</v:String>
-
+    <v:String x:Key="tgl20_interface">Помічники «Copilot» та «Recall» (Windows 11)</v:String>
+    <v:String x:Key="tgl21_interface">«Завершити завдання» ПКМ на додатку (Windows 11)</v:String>
+    <v:String x:Key="tgl22_interface">Піктограми та кнопки на панелі завдань</v:String>
+    <v:String x:Key="tgl23_interface">Показувати персоналізовану рекламу</v:String>
+    <v:String x:Key="tgl24_interface">Відновлювати останні вікна папок під час входу</v:String>
+    <v:String x:Key="tgl25_interface">Повідомлення з порадами та пропозиціями Windows</v:String>
+    <v:String x:Key="tgl26_interface">Папки, розташовані в «Цей ПК»</v:String>
+    <v:String x:Key="tgl27_interface">3D-об'єкти в провіднику</v:String>
+    <v:String x:Key="tgl28_interface">Стиснення шпалер робочого столу формату .JPEG</v:String>
+    <v:String x:Key="tgl29_interface">Спливні підказки для елементів робочого столу</v:String>
+    <v:String x:Key="tgl30_interface">Пошуковий запит з інтеграцією «Bing» в меню «Пуск»</v:String>
+    <v:String x:Key="tgl31_interface">Відкривати «Швидкий доступ» замість «Цей ПК»</v:String>
+    <v:String x:Key="tgl32_interface">Відображення розширень файлів у провіднику</v:String>
+    
     <v:String x:Key="textcolor_interface">Це зразок нового кольору.</v:String>
     <v:String x:Key="previewflick_interface">- для порівняння -</v:String>
 
-    <v:String x:Key="TglButton1_description_interface">Це налаштування змінить колір виділення курсором з синього на сірий "колір мокрого асфальту".</v:String>
-    <v:String x:Key="TglButton2_description_interface">Це налаштування змінить колір спливної підказки в деяких програмах з жовтого на блідо-блакитний "небесна блакить".</v:String>
+    <v:String x:Key="TglButton1_description_interface">Це налаштування змінить колір виділення курсором з синього на сірий «Колір мокрого асфальту».</v:String>
+    <v:String x:Key="TglButton2_description_interface">Це налаштування змінить колір спливної підказки в деяких програмах з жовтого на блідо-блакитний «небесна блакить».</v:String>
     <v:String x:Key="TglButton3_description_interface">Це налаштування зменшить розмір стандартних кнопок вікна Згорнути, Розгорнути, Закрити. Змінюється розмір для всіх вікон, таких як провідник, фотографії, браузери та інші відомі програми.</v:String>
     <v:String x:Key="TglButton4_description_interface">Це налаштування прискорить швидкість мерехтіння текстового курсору. Усталене значення - 530 мілісекунд.</v:String>
     <v:String x:Key="TglButton5_description_interface">Це налаштування зменшить товщину смуги прокручування (scrollbar) у вікнах браузерів та додатків. Не впливає на сучасні інтерфейси додатків.</v:String>
@@ -202,25 +209,27 @@
     <v:String x:Key="TglButton10_description_interface">Якщо вам здається, що тривалість появи мініатюр запущених додатків та відкритих вікон над Панеллю завдань надто велика, увімкніть це налаштування, щоб прискорити появу мініатюр.</v:String>
     <v:String x:Key="TglButton11_description_interface">Це налаштування видаляє стрілки з ярликів шляхом підміни файлу стрілки.</v:String>
     <v:String x:Key="TglButton12_description_interface">Видалення надто інтуїтивного префікса-суфікса для ярликів.</v:String>
-    <v:String x:Key="TglButton13_description_interface">Піктограма "Комп'ютер", на відміну від ярлика "Комп'ютер", краща, оскільки містить корисні команди контекстного меню та позбавлена зайвих.</v:String>
+    <v:String x:Key="TglButton13_description_interface">Піктограма «Комп'ютер», на відміну від ярлика «Комп'ютер», краща, оскільки містить корисні команди контекстного меню та позбавлена зайвих.</v:String>
     <v:String x:Key="TglButton14_description_interface">Це налаштування без зайвих турбот дозволяє швидко прибрати піктограму Кошика з робочого столу.</v:String>
     <v:String x:Key="TglButton15_description_interface">Виберіть потрібне місце відображення піктограм на панелі завдань - в середині або зліва</v:String>
-    <v:String x:Key="TglButton16_description_interface">Це налаштування змінює макет меню "Пуск", збільшуючи доступне місце для закріплення додатків.</v:String>
-    <v:String x:Key="TglButton17_description_interface">Це налаштування поверне звичне класичне контекстне меню для робочого столу та "Провідника". Увага, екран може мерехтіти.</v:String>
-    <v:String x:Key="TglButton18_description_interface">Іноді Windows 11 показує поради щодо використання тої чи іншої функції, наприклад, нового меню "Пуск" або "Швидких налаштувань". Це корисно під час першого знайомства з Windows 11, потім лише відволікає.</v:String>
+    <v:String x:Key="TglButton16_description_interface">Змінює макет меню «Пуск» шляхом розширення області для закріплених програм. Крім того, за винятком редакції Windows Home, із меню «Пуск» буде видалено розділ «Рекомендоване».</v:String>
+    <v:String x:Key="TglButton17_description_interface">Це налаштування поверне звичне класичне контекстне меню для робочого столу та «Провідника». Увага, екран може мерехтіти.</v:String>
+    <v:String x:Key="TglButton18_description_interface">Іноді Windows 11 показує поради щодо використання тої чи іншої функції, наприклад, нового меню «Пуск» або «Швидкі налаштування». Це корисно під час першого знайомства з Windows 11, потім лише відволікає.</v:String>
     <v:String x:Key="TglButton19_description_interface">Як усталено, Windows додає відступи між елементами в провіднику. Нову функцію розроблено для сенсорних екранів. Це налаштування відновлює класичний макет файлового провідника шляхом видалення відступів між елементами та позбавляє необхідності пошуку налаштувань.</v:String>
-    <v:String x:Key="TglButton20_description_interface">Це налаштування прибирає та вимикає Copilot на панелі завдань, в меню "Пуск" та в Microsoft Edge. також вимикається "Recall". Якщо у вашій редакції Windows взагалі не було цих помічників із штучним інтелектом, використовувати це налаштування немає сенсу.</v:String>
-    <v:String x:Key="TglButton21_description_interface">Шкода часу на пошуки? Це налаштування видаляє з панелі завдань піктограми Copilot, Пошук, Подання завдання, Чат. І відображення макетів прив'язки при застосуванні до кнопки розширення. На Windows 10 також видаляє та приховує Новини та Інтереси, Cortana. Увага, екран може мерехтіти.</v:String>
-    <v:String x:Key="TglButton22_description_interface">Як усталено, Windows використовує зібрану інформацію для цільової реклами - реклами, що відповідає вашим інтересам. Практично ця реклама розміщуватиметься там, де є вільне місце для відображення. Якщо ви не хочете, щоб Windows відображала персоналізовану рекламу у всіх додатках Магазину, в Провіднику, в Налаштуваннях та меню "Пуск", можете вимкнути це сміття.</v:String>
-    <v:String x:Key="TglButton23_description_interface">Як усталено, Windows не зберігає позиції вікон та їх стан після вимкнення комп'ютера. Це налаштування дозволить запам'ятати вигляд відкритих папок, щоб відновлювати його виходу з системи, перезавантаження та вимкнення комп'ютера.</v:String>
-    <v:String x:Key="TglButton24_description_interface">Це налаштування дозволяє вимкнути всі сповіщення Windows з порадами та пропозиціями, а також вимкнути Second Chance Out of Box Experience (SCOOBE) у Windows 11. SCOOBE - несподівана поява вікна з пропозицією терміново завершити налаштування системи та увійти в обліковий запис Microsoft.</v:String>
-    <v:String x:Key="TglButton25_description_interface">Це налаштування дозволяє приховати у вікні "Цей ПК" наступні папки: Робочий стіл, Відео, Документи, Завантаження, Зображення, Музика.</v:String>
-    <v:String x:Key="TglButton26_description_interface">Це налаштування видаляє елемент 3D Objects з області переходів провідника (деревоподібний список в лівій частині вікна).</v:String>
-    <v:String x:Key="TglButton27_description_interface">Як усталено, Windows знижує якість зображень шпалер робочого столу в форматі JPEG до 85%. Це налаштування встановлює для шпалер в форматі JPEG якість 100%.</v:String>
-    <v:String x:Key="TglButton28_description_interface">Це налаштування вимикає спливні підказки для елементів Робочого столу під час наведення на них вказівника миші.</v:String>
-    <v:String x:Key="TglButton29_description_interface">Як усталено, Windows надсилає все, що ви шукаєте у меню "Пуск", на свої сервери, щоб надавати вам результати пошуку в Bing. Якщо вам не потрібна інтеграція з Bing у меню "Пуск", застосуйте це налаштування, щоб вимкнути пошук у веб.</v:String>
-    <v:String x:Key="TglButton30_description_interface">Як усталено, файловий провідник відкривається на вкладці "Швидкий доступ". Щоб відкрити будь-який диск, потрібно виконати додаткові дії. Якщо це налаштування вимкнено, файловий провідник відкриває вкладку "Цей ПК", а не "Швидкий доступ".</v:String>
-    <!--#endregion-->
+    <v:String x:Key="TglButton20_description_interface">Це налаштування прибирає та вимикає Copilot на панелі завдань, в меню «Пуск» та в Microsoft Edge. також вимикається «Recall». Якщо у вашій редакції Windows взагалі не було цих помічників із штучним інтелектом, використовувати це налаштування немає сенсу.</v:String>
+    <v:String x:Key="TglButton21_description_interface">Це налаштування дозволить додати команду «Завершити завдання» в контекстне меню, яке відкривається після натискання правою кнопкою миші на додатку на панелі завдань. Це пришвидшує завершення процесів без необхідності відкривати диспетчер завдань. Увага, екран може мерехтіти.</v:String>
+    <v:String x:Key="TglButton22_description_interface">Це налаштування прибирає піктограми «Пошук», «Перегляд завдань» та «Чат», вимикає макети прив’язки при наведенні на кнопку максимізації та прибирає команду «Дізнатися про це зображення»; у старих збірках Windows\0xA011 також прибирається піктограма Copilot. Для користувачів Windows\0xA010 додатково прибирає «Новини та інтереси», Cortana. Увага, екран може мерехтіти.</v:String>
+    <v:String x:Key="TglButton23_description_interface">Як усталено, Windows використовує зібрану інформацію для цільової реклами - реклами, що відповідає вашим інтересам. Практично ця реклама розміщуватиметься там, де є вільне місце для відображення. Якщо ви не хочете, щоб Windows відображала персоналізовану рекламу у всіх додатках Магазину, в Провіднику, в Налаштуваннях та меню «Пуск», можете вимкнути це сміття.</v:String>
+    <v:String x:Key="TglButton24_description_interface">Як усталено, Windows не зберігає позиції вікон та їх стан після вимкнення комп'ютера. Це налаштування дозволить запам'ятати вигляд відкритих папок, щоб відновлювати його виходу з системи, перезавантаження та вимкнення комп'ютера.</v:String>
+    <v:String x:Key="TglButton25_description_interface">Це налаштування дозволяє вимкнути всі сповіщення Windows з порадами та пропозиціями, а також вимкнути Second Chance Out of Box Experience (SCOOBE) у Windows 11. SCOOBE - несподівана поява вікна з пропозицією терміново завершити налаштування системи та увійти в обліковий запис Microsoft.</v:String>
+    <v:String x:Key="TglButton26_description_interface">Це налаштування дозволяє приховати у вікні «Цей ПК» наступні папки: Робочий стіл, Відео, Документи, Завантаження, Зображення, Музика.</v:String>
+    <v:String x:Key="TglButton27_description_interface">Це налаштування видаляє елемент 3D Objects з області переходів провідника (деревоподібний список в лівій частині вікна).</v:String>
+    <v:String x:Key="TglButton28_description_interface">Як усталено, Windows знижує якість зображень шпалер робочого столу в форматі JPEG до 85%. Це налаштування встановлює для шпалер в форматі JPEG якість 100%.</v:String>
+    <v:String x:Key="TglButton29_description_interface">Це налаштування вимикає спливні підказки для елементів Робочого столу під час наведення на них вказівника миші.</v:String>
+    <v:String x:Key="TglButton30_description_interface">Як усталено, Windows надсилає все, що ви шукаєте у меню «Пуск», на свої сервери, щоб надавати вам результати пошуку в Bing. Якщо вам не потрібна інтеграція з Bing у меню «Пуск», застосуйте це налаштування, щоб вимкнути пошук у веб. Увага, екран може мерехтіти.</v:String>
+    <v:String x:Key="TglButton31_description_interface">Як усталено, файловий провідник відкривається на вкладці «Швидкий доступ». Щоб відкрити будь-який диск, потрібно виконати додаткові дії. Якщо це налаштування вимкнено, файловий провідник відкриває вкладку «Цей ПК», а не «Швидкий доступ».</v:String>
+    <v:String x:Key="TglButton32_description_interface">Як усталено, розширення файлів у Windows приховуються, що робить інтерфейс Провідника менш завантаженим. Якщо потрібно, можна увімкнути відображення розширень файлів за допомогою цього налаштування, заощаджуючи час на пошук. Увага, екран може мерехтіти.</v:String>
+     <!--#endregion-->
 
     <!--#region Applications Page -->
     <v:String x:Key="text0_applications">Додатки видаляються</v:String>
@@ -273,6 +282,12 @@
     <v:String x:Key="WebMediaExtensions_applications">Розширення для інтернету-мультимедіа</v:String>
     <v:String x:Key="OneConnect_applications">Тарифні плани</v:String>
     <v:String x:Key="Edge_applications">Microsoft Edge</v:String>
+
+    <v:String x:Key="title_over_applications">Підтвердження видалення</v:String>
+    <v:String x:Key="text_over_applications">Ви збираєтеся видалити браузер Microsoft\0xA0Edge. Це також призведе до видалення компонента EdgeWebView, який відповідає за відображення вебсторінок у таких програмах, як Microsoft\0xA0Office, а також у деяких Telegram‑ботах, що використовують вбудований WebView для відображення меню (міні‑додатків, вебконтенту), та інших програмах. Перш ніж продовжити, переконайтеся, що вам не потрібен цей компонент.</v:String>
+    <v:String x:Key="question_over_applications">Хочете продовжити видалення разом з EdgeWebView?</v:String>
+    <v:String x:Key="btn_сancel_applications">Скасувати</v:String>
+    <v:String x:Key="btn_delete_applications">Видалити</v:String>
     <!--#endregion-->
 
     <!--#region Services Page -->
@@ -325,8 +340,8 @@
     <v:String x:Key="TglButton18_description_services">Можна вимкнути, якщо ви не використовуєте віддалений робочий стіл та серверне підключення до нього.</v:String>
     <v:String x:Key="TglButton19_description_services">Можна вимкнути, якщо не хочете, щоб служби завантажували ваш комп'ютер своєю обробкою помилок.</v:String>
     <v:String x:Key="TglButton20_description_services">Можна вимкнути, якщо ви не керуєте файлами віддалено за допомогою Спільного доступу або за допомогою WebDav.</v:String>
-    <v:String x:Key="TglButton21_description_services">Можна вимкнути, якщо ви не використовуєте смарт-картки. Смарт-карта - один з різновидів електронних ідентифікаторів з мікросхемою. Як приклад - звичайна "банківська картка". Для щоденного використання Windows служба вам ніколи не знадобиться.</v:String>
-    <v:String x:Key="TglButton22_description_services">Можна вимкнути, якщо ви не використовуєте Кіоск Windows або не знаєте, що це таке.</v:String>
+    <v:String x:Key="TglButton21_description_services">Можна вимкнути, якщо ви не використовуєте смарт-картки. Смарт-карта - один з різновидів електронних ідентифікаторів з мікросхемою. Як приклад - звичайна «банківська картка». Для щоденного використання Windows служба вам ніколи не знадобиться.</v:String>
+    <v:String x:Key="TglButton22_description_services">Можна вимкнути, якщо ви не використовуєте режим кіоску Windows. Цей режим спрощує інтерфейс: запускається лише один UWP-додаток на весь екран, а доступ до інших функцій блокується. Зверніть увагу, що це може завадити встановленню оновлень Windows та програм через Windows Installer, оскільки також вимикається підготовка та ініціалізація системних даних і додатків при першому вході.</v:String>
     <v:String x:Key="TglButton23_description_services">Можна вимкнути, якщо ви не використовуєте шифрування дисків BitLocker та EFS-шифрування файлів або папок.</v:String>
     <v:String x:Key="TglButton24_description_services">Можна вимкнути, якщо всі потрібні вам мови вже налаштовано, і додавання нових не планується.</v:String>
     <v:String x:Key="TglButton25_description_services">Можна вимкнути, якщо ви не використовуєте Захисник Windows та всі пов'язані з ним додаткові засоби безпеку Windows.</v:String>
@@ -343,51 +358,55 @@
     <v:String x:Key="tgl1_system">Підвищена точність встановлення вказівника</v:String>
     <v:String x:Key="tgl2_system">Залипання клавіш та фільтрація введення</v:String>
     <v:String x:Key="tgl3_system">Час очікування перед вимкненням екрана блокування</v:String>
-    <v:String x:Key="tgl4_system">Технологія "Гібернація" та "Швидкий запуск"</v:String>
+    <v:String x:Key="tgl4_system">Технологія «Гібернація» та «Швидкий запуск»</v:String>
     <v:String x:Key="tgl5_system">Вікно попередження під час завершення роботи</v:String>
     <v:String x:Key="tgl6_system">Автооновлення додатків через магазин Microsoft Store</v:String>
-    <v:String x:Key="tgl7_system">Затримка відтворення звуку - Realtek Sound driver</v:String>
+    <v:String x:Key="tgl7_system">Затримка звуку у драйвері Realtek Sound</v:String>
     <v:String x:Key="tgl8_system">Захисник Windows, Antimalware, SmartScreen та VBS</v:String>
     <v:String x:Key="tgl9_system">UAC (контроль облікових записів)</v:String>
     <v:String x:Key="tgl10_system">Сповіщення про безпеку від Центру сповіщень</v:String>
     <v:String x:Key="tgl11_system">Попередження під час запуску будь-яких виконуваних файлів</v:String>
-    <v:String x:Key="tgl12_system">Діагностика оперативної пам’яті вашого ПК</v:String>
+    <v:String x:Key="tgl12_system">Автоматична діагностика оперативної пам’яті</v:String>
     <v:String x:Key="tgl13_system">Протоколи Teredo, ISATAP та IPv6</v:String>
     <v:String x:Key="tgl14_system">Стандартний розмір кешу файлової системи</v:String>
     <v:String x:Key="tgl15_system">Уповільнення запуску Windows та програм</v:String>
     <v:String x:Key="tgl16_system">Історія використання для панелі швидкого доступу</v:String>
     <v:String x:Key="tgl17_system">Автозапуск знімних носіїв</v:String>
-    <v:String x:Key="tgl18_system">Використовувати збалансовану схему живлення</v:String>
-    <v:String x:Key="tgl19_system">Функція Bluetooth та пристрої</v:String>
+    <v:String x:Key="tgl18_system">Використовувати стандартну схему живлення</v:String>
+    <v:String x:Key="tgl19_system">Використовувати функцію «Bluetooth та пристрої»</v:String>
     <v:String x:Key="tgl20_system">Брандмауер Захисника Windows</v:String>
-    <v:String x:Key="tgl21_system">Функція Windows "Ігровий режим"</v:String>
-    <v:String x:Key="tgl22_system">Функція Xbox "Ігрова панель"</v:String>
+    <v:String x:Key="tgl21_system">Використовувати функцію «Ігровий режим»</v:String>
+    <v:String x:Key="tgl22_system">Використовувати функцію «Ігрова панель»</v:String>
+    <v:String x:Key="tgl23_system">Програми працюють у фоновому режимі</v:String>
+    <v:String x:Key="tgl24_system">Зарезервоване сховище у Windows</v:String>
 
     <v:String x:Key="TextSlider1_description_system">Дозволяє змінити швидкість переміщення вказівника миші, заощаджуючи ваш час на пошук відповідних параметрів.</v:String>
     <v:String x:Key="TextSlider2_description_system">Зміна затримки перед початком повторного введення символу, рекомендоване значення - 0.</v:String>
     <v:String x:Key="TextSlider3_description_system">Зміна швидкості повторного введення символу, рекомендоване значення - 31.</v:String>
     <v:String x:Key="TglButton1_description_system">Як усталено, прискорення миші збільшує швидкість руху миші. Рекомендовано вимкнути прискорення, оскільки з ним погіршується плавність руху та точність позиціонування.</v:String>
-    <v:String x:Key="TglButton2_description_system">Якщо під час роботи на комп'ютері вам набридли вікна з пропозицією увімкнути залипання клавіш або фільтрування введення і після відповіді "Ні" такі вікна через деякий час знову з’являються, можна вимкнути цю функція. Фільтрація впливає на швидкість повторного введення на клавіатурі та пропуск повторних натискань клавіш.</v:String>
+    <v:String x:Key="TglButton2_description_system">Якщо під час роботи на комп'ютері вам набридли вікна з пропозицією увімкнути залипання клавіш або фільтрування введення і після відповіді «Ні» такі вікна через деякий час знову з’являються, можна вимкнути цю функція. Фільтрація впливає на швидкість повторного введення на клавіатурі та пропуск повторних натискань клавіш.</v:String>
     <v:String x:Key="TglButton3_description_system">Як усталено, Windows відображає екран блокування протягом 1 хвилини, після чого екран вимикається незалежно від того, чи працює комп'ютер від акумулятора, чи від мережі. Це налаштування скасовує це обмеження.</v:String>
-    <v:String x:Key="TglButton4_description_system">Теоретично "Швидкий запуск" виконується швидше, ніж вихід із "Гібернації", але не завжди це помітно на практиці. Якщо ви не використовуєте "Швидкий запуск" та "Гібернацію", ці функції можна вимкнути. Таким чином можна звільнити додаткове місце на жорсткому диску.</v:String>
+    <v:String x:Key="TglButton4_description_system">Теоретично «Швидкий запуск» виконується швидше, ніж вихід із «Гібернації», але не завжди це помітно на практиці. Якщо ви не використовуєте "Швидкий запуск» та «Гібернацію», ці функції можна вимкнути. Таким чином можна звільнити додаткове місце на диску.</v:String>
     <v:String x:Key="TglButton5_description_system">Це налаштування дозволяє вимкнути сповіщення системи, яке інформує, що при вимкненні або перезавантаженні комп'ютера відкриті програми буде завершено примусово.</v:String>
     <v:String x:Key="TglButton6_description_system">Якщо ви хочете оновлювати свої додатки з Магазину Microsoft самостійно, необхідно вимкнути функцію автоматичного оновлення. Таким чином, буде знижено навантаження на мережу.</v:String>
-    <v:String x:Key="TglButton7_description_system">Деякі версії звукових драйверів Realtek High Definition Audio мають неприємну ознаку неправильної роботи - затримка звуку. Це налаштування виправляє цей недолік. Не рекомендовано використовувати це налаштування, якщо ви не впевнені, що існує затримка звуку або не знаєте, який драйвер використовується у вашій системі.</v:String>
-    <v:String x:Key="TglButton8_description_system">Це налаштування вимикає та зупиняє служби Захисника Windows, SmartScreen, зменшує надмірне навантаження на процесор процесами Antimalware та Virtualization-Based Security (VBS). Навіть якщо Захисник Windows вимкнено, можливе відображення стану як "Увімкнено".</v:String>
+    <v:String x:Key="TglButton7_description_system">Деякі версії драйверів Realtek High Definition Audio можуть характеризуватися проблемою затримки відтворення звуку. Це налаштування усуває вказану несправність. Проте не рекомендовано його застосовувати, якщо ви не помічаєте затримки або не впевнені, що встановлено та/або використовується саме драйвер від Realtek.</v:String>
+    <v:String x:Key="TglButton8_description_system">Це налаштування вимикає та зупиняє служби Захисника Windows, SmartScreen, зменшує надмірне навантаження на процесор процесами Antimalware та Virtualization-Based Security (VBS).</v:String>
     <v:String x:Key="TglButton9_description_system">Це налаштування дозволяє повністю вимкнути UAC (контроль облікових записів), щоб прибрати піктограми щита, сповіщення про безпеку тощо. UAC не є повноцінною програмою для захисту системи.</v:String>
     <v:String x:Key="TglButton10_description_system">Під час вимкнення будь-чого, що стосується безпеки чи захисту, ви постійно отримуєте про це сповіщення. Це налаштування вимикає сповіщення про безпеку від Центру сповіщень.</v:String>
     <v:String x:Key="TglButton11_description_system">Система безпеки Windows попереджає запуск EXE, MSI, BAT, CMD та інших виконуваних файлів, завантажених через Інтернет. Підтвердження дозволу на запуск таких файлів може швидко набриднути. Це налаштування вимикає це попередження.</v:String>
-    <v:String x:Key="TglButton12_description_system">Це налаштування вимикає діагностику оперативної пам’яті вашого комп’ютера, тим самим збільшуючи загальну продуктивність системи.</v:String>
-    <v:String x:Key="TglButton13_description_system">Це налаштування вимикає у більшості випадків непотрібні протоколи Teredo, ISATAP та IPv6. Не рекомендовано використовувати це налаштування на робочих комп’ютерах (в організаціях).</v:String>
+    <v:String x:Key="TglButton12_description_system">Це налаштування вимикає автоматичний запуск діагностики оперативної пам’яті в Windows шляхом вимкнення запланованого завдання. Завдяки цьому система завантажується швидше через відсутність непотрібних перевірок, а можливість запускати діагностику вручну, коли це потрібно зберігається.</v:String>
+    <v:String x:Key="TglButton13_description_system">Це налаштування вимикає протоколи Teredo, ISATAP та IPv6, які, як правило, не потрібні більшості користувачів. Проте не рекомендовано його застосовувати на робочих або корпоративних пристроях: це може призвести до проблем із мережею або некоректної роботи деяких служб.</v:String>
     <v:String x:Key="TglButton14_description_system">Це налаштування вмикає підтримку великого кешу файлової системи. Загалом збільшення розміру кешу файлової системи покращує продуктивність комп'ютера, але зменшує фізичний обсяг пам'яті, доступний для додатків та служб.</v:String>
     <v:String x:Key="TglButton15_description_system">Як усталено, Windows має вбудований механізм відтермінування запуску програм з автоматичним завантаженням. Це рішення досить добре працює на комп’ютерах з жорсткими дисками (HDD), але на сучасних ПК із SSD-дисками цей механізм уповільнює запуск системи з програмами.</v:String>
-    <v:String x:Key="TglButton16_description_system">Це налаштування вимикає історію використання файлів та папок для панелі швидкого доступу.</v:String>
+    <v:String x:Key="TglButton16_description_system">Це налаштування вимикає запис історії використання файлів і папок, що відображаються на панелі швидкого доступу. Іншими словами, система більше не буде автоматично зберігати та показувати останні активні елементи.</v:String>
     <v:String x:Key="TglButton17_description_system">Це налаштування вимикає автозапуск для підключених до вашого комп’ютера різних типів знімних носіїв, які провідник намагатиметься відкрити. Таким чином, невідома програма не зможе відкритися на носії, у надійності якого ви не впевнені.</v:String>
-    <v:String x:Key="TglButton18_description_system">Додається схема живлення "Максимальна продуктивність". Якщо така схема вже є, буде застосовано цю наявну схему живлення. Крім того, розблоковується встановлення максимальної частоти процесора в параметрах керування живленням процесора.</v:String>
+    <v:String x:Key="TglButton18_description_system">Додається схема живлення «Максимальна продуктивність». Якщо така схема вже є, буде застосовано цю наявну схему живлення. Крім того, розблоковується встановлення максимальної частоти процесора в параметрах керування живленням процесора.</v:String>
     <v:String x:Key="TglButton19_description_system">Вимкніть, якщо ви не користуєтеся пристроями Bluetooth. Також буде видалено піктограму в області системних сповіщень (в треї).</v:String>
-    <v:String x:Key="TglButton20_description_system">Брандмауер дозволяє або забороняє програмам доступ до Інтернету, а також контролює трафік, що робить цю службу корисною. Вимикати не рекомендовано. Якщо ви знаєте, що робите, можна вимкнути.</v:String>
-    <v:String x:Key="TglButton21_description_system">Увімкнення "Ігрового режиму" не має великого впливу на потужних системах. Однак якщо у вас запущено багато фонових процесів, режим гарантує, що ці фонові процеси не впливатимуть на роботу гри.</v:String>
+    <v:String x:Key="TglButton20_description_system">Брандмауер дозволяє керувати доступом програм до Інтернету шляхом дозволу або блокування підключення та контролювати трафік. Якщо ви впевнені у своїх діях і розумієте, що робите, можна вимкнути брандмауер, однак для більшості користувачів рекомендовано залишити його увімкненим.</v:String>
+    <v:String x:Key="TglButton21_description_system">Увімкнення «Ігрового режиму» не має великого впливу на потужних системах. Однак якщо у вас запущено багато фонових процесів, режим гарантує, що ці фонові процеси не впливатимуть на роботу гри.</v:String>
     <v:String x:Key="TglButton22_description_system">Функція для запису ваших ігор. Можна вважати її малопродуктивною. Існує багато кращих альтернатив, які, на відміну від цього додатку, не відкриваються спонтанно.</v:String>
+    <v:String x:Key="TglButton23_description_system">Деякі програми дозволяють керувати фоновою активністю, що визначає їх роботу, коли вони перебувають у фоновому режимі та не використовуються активно. Загалом, вимкнення фонових програм допоможе зменшити споживання енергії та навантаження на мережу і процесор, що корисно для ноутбуків, оскільки подовжує час автономної роботи.</v:String>
+    <v:String x:Key="TglButton24_description_system">Зарезервоване сховище призначено для забезпечення передбачуваного розподілу вільного простору, який використовуватиметься оновленнями, додатками, тимчасовими файлами і системним кешем. Вимкнення сховища може звільнити значний обсяг простору. Однак, якщо у вас достатньо вільного місця, робити це не рекомендовано, ніяких додаткових переваг ви не отримаєте.</v:String>
     <!--#endregion-->
 
     <!--#region Information System Page -->
@@ -403,7 +422,7 @@
     <v:String x:Key="title_sound_systemInformation">Пристрої відтворення:</v:String>
     <v:String x:Key="title_netadapter_systemInformation">Мережеві адаптери:</v:String>
     <v:String x:Key="title_ip_systemInformation">Ваша IP-адреса:</v:String>
-    <v:String x:Key="limited_systemInformation">Доступ до мережі обмежено</v:String>
+    <v:String x:Key="connection_limited_systemInformation">Доступ до мережі обмежено</v:String>
     <v:String x:Key="connection_block_systemInformation">Підключення без доступу до мережі</v:String>
     <v:String x:Key="connection_lose_systemInformation">Немає підключення до Інтернету</v:String>
     <v:String x:Key="text_copy_systemInformatin">Скопійовано!</v:String>
@@ -416,7 +435,7 @@
     <v:String x:Key="text1_more">рекомендовано</v:String>
     <v:String x:Key="text2_more">створити точку відновлення перед використанням утиліти</v:String>
     <v:String x:Key="title_licens_more">Активація Windows</v:String>
-    <v:String x:Key="text_licens_more">Цей метод не є на 100% робочим та законними. Найкращим рішенням буде купівля ключа.</v:String>
+    <v:String x:Key="text_licens_more">Застосування методу HWID або резервного KMS: може не працювати, якщо немає ключа для вашої Windows.</v:String>
     <v:String x:Key="btntext_licens_more">Активувати</v:String>
     <v:String x:Key="title_createpoint_more">Резервування системи</v:String>
     <v:String x:Key="text_createpoint_more">Створення точки відновлення Windows, навіть у разі вимкнення їх створення.</v:String>
@@ -431,8 +450,22 @@
     <v:String x:Key="title_disablepoint_more">Вимкнення захисту</v:String>
     <v:String x:Key="text_disablepoint_more">Вимкнення створення точок відновлення системи. Увага, також видаляються раніше створені точки.</v:String>
     <v:String x:Key="btntext_disable_more">Вимкнути</v:String>
-    <v:String x:Key="title_defrag_more">Дефрагментація</v:String>
-    <v:String x:Key="text_defrag_more">Вимкнення дефрагментації дисків збільшує термін служби SSD за рахунок зменшення операцій запису.</v:String>
+    <v:String x:Key="btntext_enable_more">Увімкнути</v:String>
+    <v:String x:Key="title_defrag_off_more">Вимкнення дефрагментації</v:String>
+    <v:String x:Key="text_defrag_off_more">Вимкнення дефрагментації дисків збільшує термін служби SSD за рахунок зменшення операцій запису.</v:String>
+    <v:String x:Key="title_defrag_on_more">Увімкнення дефрагментації</v:String>
+    <v:String x:Key="text_defrag_on_more">Увімкнення дефрагментації для впорядкування файлів, ефективно лише на HDD.</v:String>
+    <v:String x:Key="title_compression_more">Стиснення NTFS</v:String>
+    <v:String x:Key="text_compression_more">Стиснення файлів, зменшення їх розміру, особливо текстових, що дозволяє заощадити місце на диску без втрат.</v:String>
+    <v:String x:Key="title_decompression_more">Розтиснення NTFS</v:String>
+    <v:String x:Key="text_decompression_more">Вимкнення стиснення, відновлення початкового розміру файлів та прискорення доступу до них.</v:String>
+    <v:String x:Key="btntext_overview_more">Огляд</v:String>
+
+    <v:String x:Key="title_over_more">Підтвердження очищення диска</v:String>
+    <v:String x:Key="text_over_more">На вашому диску знайдено папку Windows.old, яка містить файли попередньої версії Windows і займає значний обсяг дискового простору. Увага: Після видалення вміст папки відновити буде неможливо, тому переконайтеся, що всі необхідні файли збережено.</v:String>
+    <v:String x:Key="question_over_more">Хочете продовжити очищення та видалити папку Windows.old?</v:String>
+    <v:String x:Key="btn_agree_more">Погодитись</v:String>
+    <v:String x:Key="btn_decline_more">Відхилити</v:String>
     <!--#endregion-->
     
 </ResourceDictionary>
